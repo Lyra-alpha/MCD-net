@@ -21,7 +21,7 @@ The MCD Dataset contains 3,340 high-resolution image-mask pairs from Sichuan and
 
 ## Training Steps
 1. Place the dataset downloaded from Zenodo into the `dataset` folder.
-2. Before training, place the label files in `dataset/SegmentationClass` and the image files in `dataset/JPEGImages`.
+2. Before training, place the label files in `dataset/Morainse_dataset/SegmentationClass` and the image files in `dataset/Morainse_dataset/JPEGImages`.
 3. Run `dataset_annotation.py` to generate the corresponding dataset split text files before training.
 4. In the `train.py` file, select the pre-trained weights you want to use (default parameters are already set).
 5. Run `train.py` to start training.
@@ -31,5 +31,8 @@ This repository provides a trained pth file (`MCDNet_mobilenetv2_best.pth`). Set
 If you want to use your own trained model, please modify the relevant paths accordingly.
 
 ## Reference
-[https://github.com/ggyyzm/pytorch_segmentation](https://github.com/ggyyzm/pytorch_segmentation)
-[https://github.com/bubbliiiing/deeplabv3-plus-pytorch](https://github.com/bubbliiiing/deeplabv3-plus-pytorch)
+https://github.com/ggyyzm/pytorch_segmentation
+https://github.com/bubbliiiing/deeplabv3-plus-pytorch
+https://github.com/bonlime/keras-deeplab-v3-plus
+
+
