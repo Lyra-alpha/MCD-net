@@ -1,6 +1,6 @@
 # MCD-Net: A Lightweight Deep Learning Baseline for Optical-Only Moraine Segmentation
 
-Official implementation of **MCD-Net**, a lightweight deep learning framework that integrates **MobileNetV2**, **CBAM (Convolutional Block Attention Module)**, and **DeepLabV3+** decoder for moraine segmentation from optical imagery. This repository establishes the first reproducible benchmark for optical-only moraine segmentation with a novel dataset of 3,340 high-resolution annotated images.
+Official implementation of **MCD-Net**, a lightweight deep learning framework that integrates **MobileNetV2**, **CBAM (Convolutional Block Attention Module)**, and **DeepLabV3+** decoder for moraine segmentation from optical imagery.
 
 Pre-trained Model: `model_data/MCDNet_mobilenetv2_best.pth`
 
