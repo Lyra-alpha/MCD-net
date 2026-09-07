@@ -2,7 +2,6 @@
 
 Official implementation of **MCD-Net**, a lightweight deep learning framework that integrates **MobileNetV2**, **CBAM (Convolutional Block Attention Module)**, and **DeepLabV3+** decoder for moraine segmentation from optical imagery. This repository establishes the first reproducible benchmark for optical-only moraine segmentation with a novel dataset of 3,340 high-resolution annotated images.
 
-Dataset: [10.5281/zenodo.18074779](https://doi.org/10.5281/zenodo.18074779)  
 Pre-trained Model: `model_data/MCDNet_mobilenetv2_best.pth`
 
 ---
@@ -72,22 +71,6 @@ python -c "import torch; print('PyTorch:', torch.__version__); print('CUDA avail
 | OS | Ubuntu 20.04 / Windows 10/11 |
 
 GPU Memory: >= 6 GB VRAM (batch_size=8)  
-
----
-
-## Dataset Preparation
-
-1. Download the **MCD Dataset** from [Zenodo](https://doi.org/10.5281/zenodo.18074779).
-2. Extract and place the files into:
-   - `dataset/Moraine_dataset/JPEGImages/` (input images, `.jpg`)
-   - `dataset/Moraine_dataset/SegmentationClass/` (label masks, `.png`)
-3. Run the annotation script to generate the data splits:
-   ```bash
-   python dataset_annotation.py
-   ```
-   This creates `train.txt`, `val.txt`, `test.txt`, and `all.txt` inside `dataset/Moraine_dataset/ImageSets/Segmentation/`.
-
-If you already have the split files, you can skip step 3 (but ensure they match the image filenames).
 
 ---
 
